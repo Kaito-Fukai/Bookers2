@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+  </head>
+<!-- body -->
+  <body>
+  	<h1>Bookers </h1>
+	<!-- 投稿内容一覧・操作メニュー -->
+  	<section class="contents">
+  		<h2>投稿一覧</h2>
+		<table border="0">
+			<tr align="left">
+				<th> 書籍名 </th>
+				<th> 感想 </th>
+				<th> 投稿者 </th>
+			</tr>
+	  		<% @post.each do |post| %>
+			<tr align="left">
+				<td> <%= link_to post.title, booker_path(post) %> </td>
+				<td> <%= link_to post.impression, booker_path(post) %> </td>
+				<td> <%= link_to post.name, booker_path(post) %> </td>
+				<td class="button"> <%= link_to "詳しく見る", booker_path(post) %>
+					 <%= link_to "編集", edit_booker_path(post) %>
+					 <%= link_to "削除", booker_path(post), method: :delete %> </td>
+			</tr>
+	  		<% end %>
+		</table>
+  	</section>
+  	<!-- 投稿フォーム -->
+  	<section class="new-book">
+  		<h2> 新規投稿はこちら </h2>
+		<%= form_for(@newpost) do |f| %>
+		<h4> 書籍名 </h4>
+		<%= f.text_field :title %>
+
+		<h4> 感想 </h4>
+		<%= f.text_area :impression %>
+
+		<h4> 投稿者名 </h4>
+		<%= f.text_field :name %>
+
+		<%= f.submit '投稿する' %>
+
+		<% end %>
+  	</section>
+  </body>
+</html>
