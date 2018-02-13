@@ -3,7 +3,7 @@ class CreateBookers < ActiveRecord::Migration[5.1]
     create_table :bookers do |t|
       t.string :title
       t.text :impression
-      t.string :name
+      t.integer :user_id
 
       t.timestamps
     end

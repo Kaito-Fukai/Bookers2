@@ -4454,3 +4454,333 @@ Processing by BookersController#index as HTML
 Completed 200 OK in 225ms (Views: 194.5ms | ActiveRecord: 3.6ms)
 
 
+Started GET "/bookers" for 10.0.2.2 at 2018-02-13 06:34:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BookersController#index as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering bookers/index.html.erb within layouts/application
+  [1m[36mBooker Load (1.9ms)[0m  [1m[34mSELECT "bookers".* FROM "bookers"[0m
+  Rendered bookers/index.html.erb within layouts/application (46.1ms)
+Completed 200 OK in 766ms (Views: 625.5ms | ActiveRecord: 19.8ms)
+
+
+Started DELETE "/users/sign_out" for 10.0.2.2 at 2018-02-13 06:36:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"62JrRwp+lqPVAGnL0BWeT8sIAwjeEH9G90t+FV68XD8ZROVgBpgFnqOlW7bVHcRK47bVBEtsb8WqyBrhj7h8gA=="}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 40ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-13 06:36:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-02-13 06:36:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (57.3ms)
+Completed 200 OK in 239ms (Views: 237.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2018-02-13 06:36:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X46edC6z5sAWcDGnYO/XgmUHtdR+41Q3xO+QvBmLVPJWcrc8+DEkbqzieCCfz8+cbYqDwpOHX8oPH+JvF24sxQ==", "user"=>{"email"=>"1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (6.2ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-02-13 06:36:41.922927"], ["sign_in_count", 2], ["updated_at", "2018-02-13 06:36:41.925053"], ["id", 1]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 365ms (ActiveRecord: 11.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-13 06:36:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 223ms (Views: 194.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/bookers" for 10.0.2.2 at 2018-02-13 06:36:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering bookers/index.html.erb within layouts/application
+  [1m[36mBooker Load (1.5ms)[0m  [1m[34mSELECT "bookers".* FROM "bookers"[0m
+  Rendered bookers/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 204ms (Views: 169.7ms | ActiveRecord: 3.4ms)
+
+
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBookers (20180213064416)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "bookers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "impression" text, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBookers (20180213064416)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "bookers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "impression" text, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to D (20180213064732)
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to D (20180213064732)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (8.1ms)[0m  [1m[35mDROP TABLE "bookers"[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180213064732"]]
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (1.7ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBookers (20180213065238)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "bookers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "impression" text, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180213065238"]]
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.8ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/bookers" for 10.0.2.2 at 2018-02-13 06:53:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BookersController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering bookers/index.html.erb within layouts/application
+  [1m[36mBooker Load (1.5ms)[0m  [1m[34mSELECT "bookers".* FROM "bookers"[0m
+  Rendered bookers/index.html.erb within layouts/application (70.4ms)
+Completed 401 Unauthorized in 262ms (ActiveRecord: 17.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Booker:0x0a423d08>):
+    38: 		<%= f.text_area :impression %>
+    39: 
+    40: 		<h4> 投稿者名 </h4>
+    41: 		<%= f.text_field :name %>
+    42: 
+    43: 		<%= f.submit '投稿する' %>
+    44: 
+  
+app/views/bookers/index.html.erb:41:in `block in _app_views_bookers_index_html_erb___63848700_86373680'
+app/views/bookers/index.html.erb:33:in `_app_views_bookers_index_html_erb___63848700_86373680'
+Started GET "/bookers" for 10.0.2.2 at 2018-02-13 06:54:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering bookers/index.html.erb within layouts/application
+  [1m[36mBooker Load (1.7ms)[0m  [1m[34mSELECT "bookers".* FROM "bookers"[0m
+  Rendered bookers/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 727ms (Views: 702.0ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/bookers" for 10.0.2.2 at 2018-02-13 06:54:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SCSYg92op+6e25dOM71p7G8hs8oleil2yBcOG6ZKDNNmiWnb7hKTSypl75fT9zex2dwlpZNyMu/Mt/npKz/YSw==", "booker"=>{"title"=>"a", "impression"=>"a"}, "commit"=>"投稿する"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (6.7ms)[0m  [1m[32mINSERT INTO "bookers" ("title", "impression", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "a"], ["impression", "a"], ["created_at", "2018-02-13 06:54:40.891276"], ["updated_at", "2018-02-13 06:54:40.891276"]]
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/bookers
+Completed 302 Found in 25ms (ActiveRecord: 13.0ms)
+
+
+Started GET "/bookers" for 10.0.2.2 at 2018-02-13 06:54:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering bookers/index.html.erb within layouts/application
+  [1m[36mBooker Load (1.8ms)[0m  [1m[34mSELECT "bookers".* FROM "bookers"[0m
+  Rendered bookers/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 277ms (Views: 242.9ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/bookers" for 10.0.2.2 at 2018-02-13 06:54:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xYDR989ibZd6wQ/z8mDUNlrBg36r+vlqB+JBvfSDGWnrLSCv/NhZMs5/dyoSKopr7DwVER3y4vMDQrZPefbN8Q==", "booker"=>{"title"=>"b", "impression"=>"b"}, "commit"=>"投稿する"}
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.8ms)[0m  [1m[32mINSERT INTO "bookers" ("title", "impression", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "b"], ["impression", "b"], ["created_at", "2018-02-13 06:54:49.920828"], ["updated_at", "2018-02-13 06:54:49.920828"]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/bookers
+Completed 302 Found in 28ms (ActiveRecord: 13.2ms)
+
+
+Started GET "/bookers" for 10.0.2.2 at 2018-02-13 06:54:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering bookers/index.html.erb within layouts/application
+  [1m[36mBooker Load (1.8ms)[0m  [1m[34mSELECT "bookers".* FROM "bookers"[0m
+  Rendered bookers/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 245ms (Views: 218.2ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/bookers" for 10.0.2.2 at 2018-02-13 06:54:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GQ/7RAFx6uSAIa+bDmGGais6qOD7YFyuv3vm/hQShgg3ogocMsveQTSf10LuK9g3ncc+j01oRze72xEMmWdSkA==", "booker"=>{"title"=>"c", "impression"=>"c"}, "commit"=>"投稿する"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (8.7ms)[0m  [1m[32mINSERT INTO "bookers" ("title", "impression", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "c"], ["impression", "c"], ["created_at", "2018-02-13 06:54:54.093829"], ["updated_at", "2018-02-13 06:54:54.093829"]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/bookers
+Completed 302 Found in 24ms (ActiveRecord: 15.3ms)
+
+
+Started GET "/bookers" for 10.0.2.2 at 2018-02-13 06:54:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering bookers/index.html.erb within layouts/application
+  [1m[36mBooker Load (1.5ms)[0m  [1m[34mSELECT "bookers".* FROM "bookers"[0m
+  Rendered bookers/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 227ms (Views: 197.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/bookers" for 10.0.2.2 at 2018-02-13 06:55:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering bookers/index.html.erb within layouts/application
+  [1m[36mBooker Load (1.1ms)[0m  [1m[34mSELECT "bookers".* FROM "bookers"[0m
+  Rendered bookers/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 193ms (Views: 167.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/bookers/1" for 10.0.2.2 at 2018-02-13 08:16:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BookersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBooker Load (1.3ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering bookers/show.html.erb within layouts/application
+  Rendered bookers/show.html.erb within layouts/application (27.5ms)
+Completed 401 Unauthorized in 220ms (ActiveRecord: 16.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Booker:0x0b81eb50>):
+    4: 
+    5: <h4>感想: <%= @post.impression %> </h4>
+    6: 
+    7: <h4>投稿者名: <%= @post.name %> </h4>
+    8: 
+    9: <h4>投稿日時: <%= @post.created_at %> </h4>
+   10: 
+  
+app/views/bookers/show.html.erb:7:in `_app_views_bookers_show_html_erb___916048441_96529480'
+Started GET "/bookers/1" for 10.0.2.2 at 2018-02-13 08:16:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBooker Load (1.5ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering bookers/show.html.erb within layouts/application
+  Rendered bookers/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 725ms (Views: 697.9ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/bookers" for 10.0.2.2 at 2018-02-13 08:17:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering bookers/index.html.erb within layouts/application
+  [1m[36mBooker Load (1.3ms)[0m  [1m[34mSELECT "bookers".* FROM "bookers"[0m
+  Rendered bookers/index.html.erb within layouts/application (37.6ms)
+Completed 200 OK in 237ms (Views: 204.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/bookers" for 10.0.2.2 at 2018-02-13 08:17:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#index as HTML
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering bookers/index.html.erb within layouts/application
+  [1m[36mBooker Load (1.4ms)[0m  [1m[34mSELECT "bookers".* FROM "bookers"[0m
+  Rendered bookers/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 210ms (Views: 171.1ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/bookers" for 10.0.2.2 at 2018-02-13 08:17:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering bookers/index.html.erb within layouts/application
+  [1m[36mBooker Load (1.0ms)[0m  [1m[34mSELECT "bookers".* FROM "bookers"[0m
+  Rendered bookers/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 228ms (Views: 181.1ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/bookers" for 10.0.2.2 at 2018-02-13 08:17:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wc+dDsFDEdYvE6mZ/swpgOhXVgNlN0QwoBDUkcw+/fOYlFnGp378I5Q7YYWw5Jx0nHuzgu4zBzfRLfcDXiofqg==", "booker"=>{"title"=>"d", "impression"=>"d"}, "commit"=>"投稿する"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (6.9ms)[0m  [1m[32mINSERT INTO "bookers" ("title", "impression", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "d"], ["impression", "d"], ["created_at", "2018-02-13 08:17:19.464274"], ["updated_at", "2018-02-13 08:17:19.464274"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/bookers
+Completed 302 Found in 24ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/bookers" for 10.0.2.2 at 2018-02-13 08:17:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering bookers/index.html.erb within layouts/application
+  [1m[36mBooker Load (1.7ms)[0m  [1m[34mSELECT "bookers".* FROM "bookers"[0m
+  Rendered bookers/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 272ms (Views: 244.8ms | ActiveRecord: 3.7ms)
+
+
