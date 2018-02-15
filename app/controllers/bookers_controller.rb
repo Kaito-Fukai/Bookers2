@@ -4,7 +4,7 @@ class BookersController < ApplicationController
   end
 
   def index
-  	@post = Booker.all
+   	@post = Booker.page(params[:page]).reverse_order
     @newpost = Booker.new
   end
 
@@ -14,8 +14,9 @@ class BookersController < ApplicationController
 
   def create
   	newpost = Booker.new(post_params)
+    newpost.user_id = current_user.id
   	newpost.save
-  	redirect_to bookers_path
+    redirect_to user_path(current_user.id)
   end
 
   def edit
@@ -36,7 +37,7 @@ class BookersController < ApplicationController
 
   private
   def post_params
-  	params.require(:booker).permit(:title, :impression, :name)
+  	params.require(:booker).permit(:title, :impression, :user_id)
   end
 
 end

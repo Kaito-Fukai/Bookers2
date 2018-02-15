@@ -6,10 +6,29 @@
 <!-- body -->
   <body>
   	<h1>Bookers </h1>
-	<!-- 投稿内容一覧・操作メニュー -->
+	<div class="container">
+		<div class="row">
+				<div class="col-xs-3">
+  	<!-- 投稿フォーム -->
+  	<section class="new-book">
+  		<h2> 新規投稿はこちら </h2>
+		<%= form_for(@newpost) do |f| %>
+		<h4> 書籍名 </h4>
+		<%= f.text_field :title %>
+
+		<h4> 感想 </h4>
+		<%= f.text_area :impression %>
+
+		<%= f.submit '投稿する' %>
+
+		<% end %>
+  	</section>
+  </div>
+	<!-- 投稿内容一覧 -->
+	<div class="col-xs-9">
   	<section class="contents">
   		<h2>投稿一覧</h2>
-		<table border="0">
+		<table class="table table-stripped">
 			<tr align="left">
 				<th> 書籍名 </th>
 				<th> 感想 </th>
@@ -26,20 +45,10 @@
 			</tr>
 	  		<% end %>
 		</table>
+	  <%= paginate @post, class: "pagenate" %>
   	</section>
-  	<!-- 投稿フォーム -->
-  	<section class="new-book">
-  		<h2> 新規投稿はこちら </h2>
-		<%= form_for(@newpost) do |f| %>
-		<h4> 書籍名 </h4>
-		<%= f.text_field :title %>
-
-		<h4> 感想 </h4>
-		<%= f.text_area :impression %>
-
-		<%= f.submit '投稿する' %>
-
-		<% end %>
-  	</section>
+  </div>
+</div>
+</div>
   </body>
 </html>

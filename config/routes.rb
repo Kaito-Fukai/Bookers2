@@ -1,11 +1,15 @@
 Rails.application.routes.draw do
 
   devise_for :users
+  resources :users, only: [:show, :edit, :update]
+
   get 'bookers/top' => 'bookers#top'
 
   resources :bookers
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root 'bookers#top'
 
+  get '/users' => 'users#user'
+
+  root 'bookers#top'
 
 end
