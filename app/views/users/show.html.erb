@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+  </head>
+<!-- ユーザー個人情報 -->
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-4">
+				<h3> Your Profile </h3>
+				<img><%= attachment_image_tag @user, :profile_image, :fill, 100, 100, class: "img-circle pull-left profile-thumb" ,fallback: "no_image.jpg"%></img> <br />
+				<table class="">
+				<tr> <th> name </th>
+					 <th><%= @user.name %> </th>
+			    </tr>
+				<tr> <th> introduction </th>
+					 <th> <%= @user.profile_text %> </th>
+			    </tr>
+				</table>
+					<% if @user.id == current_user.id %>
+  			    	<%= link_to "プロフィール編集", edit_user_path(@user) %>
+  					<% end %>
+ 				 	<section class="new-book">
+  						<h3> create new post </h3>
+							<%= form_for(@newpost) do |f| %>
+						<h4> title </h4>
+							<%= f.text_field :title %>
+						<h4> impression </h4>
+							<%= f.text_area :impression %>
+							<%= f.submit '投稿する' %>
+							<% end %>
+  					</section>
+  				</diV>
+<!-- 投稿内容一覧・操作メニュー -->
+			<div class="col-xs-8">
+		  		<section class="contents">
+	  				<h3>Your posts</h3>
+				<table border="0">
+					<tr align="left">
+						<th> title </th>
+						<th> impression </th>
+						<th> user</th>
+					</tr>
+	  				<% @post.each do |post| %>
+					<tr align="left">
+						<td> <%= link_to post.title, booker_path(post) %> </td>
+						<td> <%= link_to post.impression, booker_path(post) %> </td>
+						<td> <%= link_to post.user.name, booker_path(post) %> </td>
+						<td class="button">
+							 <%= link_to "詳しく見る", booker_path(post) %>
+				   			 <% if @user.id == current_user.id %>
+							 <%= link_to "編集", edit_booker_path(post) %>
+							 <%= link_to "削除", booker_path(post), method: :delete %>
+							 <% end %>
+						</td>
+					</tr>
+	  				<% end %>
+				</table>
+				<%= paginate @post, class: "pagenate" %>
+ 	 			</section>
+  			</div>
+		</div>
+	</div>
+  </body>
+</html>

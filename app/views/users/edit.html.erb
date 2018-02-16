@@ -1,0 +1,12 @@
+
+<%= form_for(@user) do |f| %>
+        <label>Name</label><br/>
+        <%= f.text_field :name, autofocus: true, class:"imput-small", id:"inputEmail", placeholder:"名前"%><br />
+        <label>Profile image</label><br />
+        <%= attachment_image_tag @user, :profile_image, :fill, 60, 60, class: "img-circle pull-left profile-thumb" %><br />
+    	<%= f.attachment_field :profile_image, placeholder: "プロフィール画像", class: "user-edit-form", fallback: "no_image.jpg"%><br />
+    	<label>Profile text </label><br/>
+    	<%= f.text_area :profile_text, autofocus: true, class:"imput-small", id:"inputEmail", placeholder:"自己紹介文" %> <br />
+
+	    <%= f.submit "変更を保存" %>
+<% end %>

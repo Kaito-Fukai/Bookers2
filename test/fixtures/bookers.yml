@@ -3,9 +3,9 @@
 one:
   title: MyString
   impression: MyText
-  name: MyString
+  user_id: 1
 
 two:
   title: MyString
   impression: MyText
-  name: MyString
+  user_id: 1

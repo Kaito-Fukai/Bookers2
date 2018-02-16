@@ -1,0 +1,104 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *= require_tree .
+ *= require_self
+ */
+
+    @import "bootstrap-sprockets";
+    @import "bootstrap";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* 全ビューページ共通の設定*/
+
+
+.header{
+    width: 100%;
+    background-color: black;
+    height: 50px;
+}
+.title {
+  color: white;
+  height: 50px;
+  padding: 15px 5px;
+  font-size: 16px;
+}
+.top-menu a {
+  color: white;
+  height: 50px;
+  vertical-align: center;
+}
+
+
+.color-white {
+  color:white;
+}
+
+h2 {
+  width:100%;
+  margin: 15px 0px;
+  font-size: 22px;
+  float:left;
+}
+
+h4 {
+  padding: 5px 0px;
+}
+
+
+.nav {
+  float:left;
+}
+.header {
+  width:100%;
+  background-color: black;
+  color: gray;
+}
+
+
+/* index.html.erb への設定*/
+
+body {
+  font-family: 'Arial Black','Javanese Text','ヒラギノ角ゴ StdN','Hiragino Kaku Gothic ProN',sans-serif;
+  margin: 33px;
+}
+.user-info{
+  width: 100%;
+  height: 300px;
+}
+
+.contents {
+  float: left;
+  width: 100%;
+}
+th, td {
+  padding-bottom: 5px;
+  padding-right: 60px;
+}
+.button a {
+  text-decoration: underline;
+  margin-right: 5px;
+}

@@ -1,15 +1,17 @@
-<h2>投稿内容</h2>
+<h2>Post</h2>
 
-<h4>書籍名: <%= @post.title %> </h4>
+<h4>title: <%= @post.title %> </h4>
 
-<h4>感想: <%= @post.impression %> </h4>
+<h4>impression: <%= @post.impression %> </h4>
 
-<h4>投稿者名: <%= @post.name %> </h4>
+<h4>posted by: <%= @post.user_id %> </h4>
 
-<h4>投稿日時: <%= @post.created_at %> </h4>
+<h4>posted at: <%= @post.created_at %> </h4>
 
 <p class="button">
-	<%= link_to "編集", edit_booker_path(@post) %>
-	<%= link_to "削除", booker_path(@post), method: :delete %>
-	<%= link_to "一覧に戻る", bookers_path %>
+	<% if @post.user.id == current_user.id %>
+		<%= link_to "編集", edit_booker_path(@post) %>
+		<%= link_to "削除", booker_path(@post), method: :delete %>
+	<% end %>
+		<%= link_to "一覧に戻る", bookers_path %>
 </p>

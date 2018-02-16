@@ -3,12 +3,54 @@
   <head>
     <title>Bookers</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <div class="header">
+    	<div id="slidemenu">
+        <div class="container">
+          <div class="row">
+            <div class="title col-xs-4"> <span class="glyphicon glyphicon-book color-white" aria-hidden="true"> </span>Bookers</div>
+            <div class="col-xs-8" >
+              <ul class="nav navbar-nav navbar-right" data-hover="dropdown" data-animations="zoomIn fadeIn fadeInUp fadeIn">
+                <% if user_signed_in? %>
+                  <li class="top-menu">
+                    <%= link_to sanitize('<span class="glyphicon glyphicon-log-out color-white" aria-hidden="true"></span>') +'Log out', destroy_user_session_path, method: :delete %>
+                  </li>
+                  <li class="top-menu">
+                    <%= link_to sanitize('<span class="glyphicon glyphicon-th-list color-white" aria-hidden="true"></span>')+'Books', bookers_path %>
+                  </li>
+                  <li class="top-menu">
+                    <%= link_to sanitize('<span class="glyphicon glyphicon-user color-white" aria-hidden="true"></span>') + 'Users', users_path %>
+                  </li>
+                  <li class="top-menu">
+                    <%= link_to sanitize('<span class="glyphicon glyphicon-home color-white" aria-hidden="true"></span>') + 'Home', user_path(current_user.id) %>
+                  </li>
+                <% else %>
+                  <li class="top-menu">
+                    <%= link_to sanitize('<span class="glyphicon glyphicon-minus color-white" aria-hidden="true"></span>') + 'Top', bookers_top_path %>
+                  </li>
+                  <li class="top-menu">
+                    <%= link_to sanitize('<span class="glyphicon glyphicon-plus color-white" aria-hidden="true"></span>
+                    ') +'Sign up', new_user_registration_path %>
+                  </li>
+                  <li class="top-menu">
+                    <%= link_to sanitize('<span class="glyphicon glyphicon-tree-conifer color-white" aria-hidden="true"></span>
+                    ') + 'About', bookers_about_path %>
+                  </li>
+                  <li class="top-menu">
+                    <%= link_to sanitize('<span class="glyphicon glyphicon-log-in color-white" aria-hidden="true"></span>
+                    ') +'Log in', new_user_session_path %>
+                  </li>
+                <% end %>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>
