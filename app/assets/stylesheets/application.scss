@@ -9,10 +9,10 @@
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
- *
  *= require_tree .
  *= require_self
  */
+
     @import "bootstrap-sprockets";
     @import "bootstrap";
 
@@ -34,14 +34,44 @@ a {
 
 /* 全ビューページ共通の設定*/
 
+
+.header{
+    width: 100%;
+    background-color: black;
+    height: 50px;
+}
+.header h2, .top-menu a {
+  color:white;
+}
+.color-white {
+  color:white;
+}
+
 h2 {
+  width:100%;
   margin: 15px 0px;
   font-size: 22px;
-  text-decoration: underline;
+  float:left;
 }
 h4 {
   padding: 5px 0px;
 }
+
+
+#slidemenu {
+  width: 100%;
+  height: 150px;
+}
+
+.nav {
+  float:left;
+}
+.header {
+  width:100%;
+  background-color: black;
+  color: gray;
+}
+
 
 /* index.html.erb への設定*/
 
@@ -60,8 +90,7 @@ body {
 }
 th, td {
   padding-bottom: 5px;
-  padding-right: 15px;
-  padding-left: 15px
+  padding-right: 60px;
 }
 .button a {
   text-decoration: underline;

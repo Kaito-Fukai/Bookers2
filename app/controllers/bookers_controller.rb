@@ -1,6 +1,10 @@
 class BookersController < ApplicationController
+ before_action :authenticate_user!, only: [:index, :show, :edit, :update, :destroy]
 
   def top
+  end
+
+  def about
   end
 
   def index
