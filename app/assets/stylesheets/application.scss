@@ -40,9 +40,19 @@ a {
     background-color: black;
     height: 50px;
 }
-.header h2, .top-menu a {
-  color:white;
+.title {
+  color: white;
+  height: 50px;
+  padding: 15px 5px;
+  font-size: 16px;
 }
+.top-menu a {
+  color: white;
+  height: 50px;
+  vertical-align: center;
+}
+
+
 .color-white {
   color:white;
 }
@@ -53,15 +63,11 @@ h2 {
   font-size: 22px;
   float:left;
 }
+
 h4 {
   padding: 5px 0px;
 }
 
-
-#slidemenu {
-  width: 100%;
-  height: 150px;
-}
 
 .nav {
   float:left;

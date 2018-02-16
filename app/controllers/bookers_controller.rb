@@ -44,4 +44,8 @@ class BookersController < ApplicationController
   	params.require(:booker).permit(:title, :impression, :user_id)
   end
 
+  def user_params
+      params.require(:user).permit(:name, :profile_image, :profile_text)
+  end
+
 end

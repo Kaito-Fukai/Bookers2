@@ -1,12 +1,17 @@
 <h2>edit post</h2>
 
-<%= form_for(@post) do |f| %>
-	<h4> title </h4>
-	<%= f.text_field :title %>
+<% if @post.user.id == current_user.id %>
 
-	<h4> impression </h4>
-	<%= f.text_area :impression %>
+	<%= form_for(@post) do |f| %>
+		<h4> title </h4>
+		<%= f.text_field :title %>
 
-	<%= f.submit '編集完了' %>
+		<h4> impression </h4>
+		<%= f.text_area :impression %>
 
+		<%= f.submit '編集完了' %>
+	<% end %>
+
+<% else %>
+	<p> 編集権限がありません </p>
 <% end %>

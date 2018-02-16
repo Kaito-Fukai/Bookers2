@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
    before_action :authenticate_user!
-   
+
   def user
     @user = User.all
     @newpost = Booker.new
