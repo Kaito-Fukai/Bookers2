@@ -10,17 +10,23 @@ class BookersController < ApplicationController
   def index
    	@post = Booker.page(params[:page]).reverse_order
     @newpost = Booker.new
+    @user = User.all
   end
 
   def show
+    @newpost = Booker.new
   	@post = Booker.find(params[:id])
   end
 
   def create
-  	newpost = Booker.new(post_params)
-    newpost.user_id = current_user.id
-  	newpost.save
-    redirect_to user_path(current_user.id)
+    @post = Booker.page(params[:page]).reverse_order
+  	@newpost = Booker.new(post_params)
+    @newpost.user_id = current_user.id
+    if @newpost.save
+      redirect_to user_path(current_user.id)
+    else
+      render action: :index
+    end
   end
 
   def edit
@@ -36,7 +42,7 @@ class BookersController < ApplicationController
   def destroy
   	post = Booker.find(params[:id])
   	post.destroy
-  	redirect_to bookers_path
+  	redirect_to bookers_path, notice: 'deletion successfully completed.'
   end
 
   private

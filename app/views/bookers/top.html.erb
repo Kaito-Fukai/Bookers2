@@ -1,5 +1,15 @@
-<h1>Welcome to Bookers!</h1>
-<p>"書籍レビュー共有サイト"<br>
-    自由に投稿してください・・・</p>
-
-<h2><%=link_to "Go!", new_user_session_path %></h2>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="top-page-text">
+				<h1>Welcome to Bookers!</h1>
+				<p>"書籍レビュー共有サイト"<br>
+				自由に投稿してください・・・</p>
+			</div>
+			<div class="top-page-button">
+				<%=link_to "新規ユーザーの方はこちら(サインアップ)", new_user_registration_path, class: 'col-xs-4 btn btn-info top-page-button' %><br/>
+				<%=link_to "登録済みユーザーの方はこちら(ログイン)", new_user_session_path, class: 'col-xs-4 btn btn-danger top-page-button'%>
+			</div>
+		</div>
+	</div>
+</div>

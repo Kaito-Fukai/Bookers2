@@ -1,0 +1,30 @@
+<!-- 共通テンプレート（ページ左半分） -->
+<div class="col-xs-3">
+	<!-- 上半分 ユーザー情報-->
+	<section class="">
+		<h3> Your Profile </h3>
+		<img><%= attachment_image_tag current_user, :profile_image, :fill, 100, 100, class: "img-circle pull-left profile-thumb" ,fallback: "no_image.jpg"%></img> <br/>
+		<table class="table table-stripped">
+			<tr><th> name </th>
+				<th><%= current_user.name %></th>
+			</tr>
+			<tr><th> introduction </th>
+				<th><%= current_user.profile_text %></th>
+			</tr>
+		</table>
+		<%= link_to edit_user_path(current_user.id), class: 'col-xs-12 btn btn default' do %>
+			<span class= "glyphicon glyphicon-edit"> </span>
+		<% end %>
+	</section>
+	<!-- 下半分 新規投稿フォーム -->
+	<section class="new-book">
+		<p class="headline-create-new-post"> create new post </p>
+		<%= form_for(newpost) do |f| %>
+			<h4> title </h4>
+				<%= f.text_field :title, class: "input-xlarge" %>
+			<h4> impression </h4>
+				<%= f.text_area :impression, :size=> "26x5" %><br />
+			<%= f.submit 'create!', class: 'btn btn-primary col-xs-12'%>
+		<% end %>
+	</section>
+</div>

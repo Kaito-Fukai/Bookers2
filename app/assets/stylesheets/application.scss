@@ -16,7 +16,6 @@
     @import "bootstrap-sprockets";
     @import "bootstrap";
 
-
 * {
   margin: 0;
   padding: 0;
@@ -32,13 +31,28 @@ a {
   clear: both;
 }
 
-/* 全ビューページ共通の設定*/
+// トップページ
+.top-page-text {
+  text-align : center;
+  margin-bottom: 30px;
+  float: initial;
+}
+.top-page-button {
+  text-align : center;
+  margin: 0 auto;
+  float: initial;
+}
 
-
+// ヘッダー
 .header{
-    width: 100%;
-    background-color: black;
-    height: 50px;
+  width: 100%;
+  background-color: black;
+  height: 50px;
+}
+.header {
+  width:100%;
+  background-color: black;
+  color: gray;
 }
 .title {
   color: white;
@@ -52,53 +66,89 @@ a {
   vertical-align: center;
 }
 
-
+// ヘッダーアイコン
 .color-white {
   color:white;
 }
 
+// 共通テンプレート _list.html.erb
+.headline-create-new-post{
+  font-size: 22px;
+  margin-top: 80px;
+}
+
+// 複数ページにまたがる設定項目
+body {
+  font-family: 'verdana, arial, helvetica, sans-serif'
+}
 h2 {
   width:100%;
-  margin: 15px 0px;
+  margin-top: 30px;
   font-size: 22px;
   float:left;
 }
-
+h3 {
+  margin-top: 30px;
+}
 h4 {
   padding: 5px 0px;
-}
-
-
-.nav {
-  float:left;
-}
-.header {
-  width:100%;
-  background-color: black;
-  color: gray;
-}
-
-
-/* index.html.erb への設定*/
-
-body {
-  font-family: 'Arial Black','Javanese Text','ヒラギノ角ゴ StdN','Hiragino Kaku Gothic ProN',sans-serif;
-  margin: 33px;
-}
-.user-info{
-  width: 100%;
-  height: 300px;
-}
-
-.contents {
-  float: left;
-  width: 100%;
 }
 th, td {
   padding-bottom: 5px;
   padding-right: 60px;
 }
-.button a {
-  text-decoration: underline;
-  margin-right: 5px;
+#notice {
+  color:green;
+}
+.user-info{
+  width: 100%;
+  height: 300px;
+}
+.contents {
+  float: left;
+  width: 100%;
+}
+.fallback {
+  width: 45px;
+  height: 45px;
+}
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 0.5px solid gray;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  user-select: none;
+}
+.nav {
+  float:left;
+}
+.create-form {
+  width: 400px;
+}
+
+// 投稿内容編集ページ
+.edit-page-head{
+  width:100%;
+  height:30px;
+}
+
+// indexページ　エラーメッセージ
+#error_explanation {
+  border: solid red;
+  background-color: #EEEEEE;
+  color: red;
+}
+
+// フッター
+footer{
+  text-align: right;
 }

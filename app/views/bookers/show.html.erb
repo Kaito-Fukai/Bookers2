@@ -1,17 +1,35 @@
-<h2>Post</h2>
-
-<h4>title: <%= @post.title %> </h4>
-
-<h4>impression: <%= @post.impression %> </h4>
-
-<h4>posted by: <%= @post.user_id %> </h4>
-
-<h4>posted at: <%= @post.created_at %> </h4>
-
-<p class="button">
-	<% if @post.user.id == current_user.id %>
-		<%= link_to "編集", edit_booker_path(@post) %>
-		<%= link_to "削除", booker_path(@post), method: :delete %>
-	<% end %>
-		<%= link_to "一覧に戻る", bookers_path %>
-</p>
+<!doctype html>
+<html>
+<div class="container">
+	<div class="row">
+		<!-- ユーザー情報（共通テンプレート） -->
+		<%= render 'users/list', newpost: @newpost %>
+		<!-- ページの中身 -->
+		<div class="col-xs-9">
+			<section class="contents">
+				<h3>Post</h3>
+				<table class="table table-stripped">
+					<tr align="left">
+						<th>posted by</th>
+						<th>title </th>
+						<th>impression  </th>
+						<th>posted at </th>
+					</tr>
+					<tr align="left">
+						<td><%= attachment_image_tag @post.user, :profile_image, :fill, 45, 45, class: "img-square pull-left profile-thumb", fallback: "no_image.jpg" %> <br>
+							<%= @post.user.name %></td>
+							<td><%= @post.title %></td>
+							<td><%= @post.impression %></td>
+							<td><%= @post.created_at.to_s(:created_at) %></td>
+					</tr>
+				</table>
+				<% if @post.user.id == current_user.id %>
+					<%= link_to "編集", edit_booker_path(@post), class: 'btn btn-info'  %>
+					<%= link_to "削除", booker_path(@post), method: :delete, data: {confirm: '本当に削除してよろしいですか?'}, class: 'btn btn-danger'  %>
+				<% end %>
+				<%= link_to "一覧に戻る", bookers_path, class: 'btn btn-success'  %>
+			</section>
+		</div>
+	</div>
+</div>
+</html>

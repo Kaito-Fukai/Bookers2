@@ -1,51 +1,56 @@
 <!doctype html>
 <html>
-  <head>
+<head>
 	<meta charset="UTF-8">
-  </head>
+</head>
 <!-- body -->
-  <body>
+<body>
+	<!-- フラッシュメッセージ-->
+	<% if flash[:notice] %>
+	<p id="notice"><%= flash[:notice] %></p>
+	<% end %>
+	<!-- 投稿時のエラーメッセージ -->
+	<% if @newpost.errors.any? %>
+	<div id="error_explanation">
+		<h3><%= @newpost.errors.count %>件のエラーが発生しました。</h3>
+		<ul>
+			<% @newpost.errors.full_messages.each do |message| %>
+			<li><%= message %></li>
+			<% end %>
+		</ul>
+	</div>
+	<% end %>
+	<!-- ページの中身 -->
 	<div class="container">
 		<div class="row">
-				<div class="col-xs-4">
-  	<!-- 投稿フォーム -->
-  	<section class="new-book">
-  		<h3> create new post </h3>
-		<%= form_for(@newpost) do |f| %>
-		<h4> title </h4>
-		<%= f.text_field :title %>
-
-		<h4> impression </h4>
-		<%= f.text_area :impression %> <br />
-
-		<%= f.submit '投稿する' %>
-
-		<% end %>
-  	</section>
-  </div>
-	<!-- 投稿内容一覧 -->
-	<div class="col-xs-8">
-  	<section class="contents">
-  		<h3>all posts</h3>
-		<table class="table table-stripped">
-			<tr align="left">
-				<th> title </th>
-				<th> impression </th>
-				<th> user </th>
-			</tr>
-	  		<% @post.each do |post| %>
-			<tr align="left">
-				<td> <%= link_to post.title, booker_path(post) %> </td>
-				<td> <%= link_to post.impression, booker_path(post) %> </td>
-				<td> <%= link_to post.user.name, booker_path(post) %> </td>
-				<td class="button"> <%= link_to "詳しく見る", booker_path(post) %>
-			</tr>
-	  		<% end %>
-		</table>
-	  <%= paginate @post, class: "pagenate" %>
-  	</section>
-  </div>
-</div>
-</div>
-  </body>
+			<!-- ユーザー情報（共通テンプレート） -->
+			<%= render 'users/list', newpost: @newpost %>
+			<!-- 投稿内容一覧 -->
+			<div class="col-xs-9">
+				<section class="contents">
+					<h3>Books(all posts)</h3>
+					<table class="table table-stripped">
+						<tr align="left">
+							<th> user </th>
+							<th> </th>
+							<th> title </th>
+							<th> impression </th>
+							<th></th>
+						</tr>
+						<% @post.each do |post| %>
+						<tr align="left">
+							<td> <%= attachment_image_tag post.user, :profile_image, :fill, 45, 45, class: "img-square pull-left profile-thumb", fallback: "no_image.jpg" %></td>
+							<td> <%= link_to post.user.name, user_path(post.user_id) %> </td>
+							<td> <%= link_to post.title, booker_path(post) %> </td>
+							<td> <%= link_to post.impression, booker_path(post) %> </td>
+							<td> <%= link_to "show detail", booker_path(post), class: 'btn btn-info' %> </td>
+						</tr>
+						<% end %>
+					</table>
+					<%= paginate @post, class: "pagenate" %>
+				</section>
+			</div>
+		</div>
+	</div>
+</body>
 </html>
