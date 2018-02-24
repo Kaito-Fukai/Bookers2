@@ -35040,3 +35040,2017 @@ Processing by BookersController#index as HTML
 Completed 200 OK in 522ms (Views: 494.5ms | ActiveRecord: 9.0ms)
 
 
+Started GET "/" for 10.0.2.2 at 2018-02-20 09:34:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (7.9ms)
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 1759ms (Views: 1696.0ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/bookers" for 10.0.2.2 at 2018-02-20 09:34:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#index as HTML
+  [1m[36mUser Load (5.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering bookers/index.html.erb within layouts/application
+  Rendered users/_list.html.erb (35.5ms)
+  [1m[36mBooker Load (2.4ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" ORDER BY "bookers"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "bookers"[0m
+  Rendered bookers/index.html.erb within layouts/application (258.7ms)
+Completed 200 OK in 707ms (Views: 608.9ms | ActiveRecord: 18.8ms)
+
+
+Started DELETE "/users/sign_out" for 10.0.2.2 at 2018-02-20 09:34:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1V8yTcwdvprywOCva5PpgvD60K2yyBxA9kBd/ZwRmwrgqegfe1PXSSuAwUaUcWLF0OrTgqvTRrXsN6Zgc+dUJQ=="}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 32ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-20 09:34:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 360ms (Views: 339.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-02-20 09:34:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (61.2ms)
+Completed 200 OK in 392ms (Views: 389.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 10.0.2.2 at 2018-02-20 09:34:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 393ms (Views: 392.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bookers/top" for 10.0.2.2 at 2018-02-20 09:34:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 387ms (Views: 354.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bookers/about" for 10.0.2.2 at 2018-02-20 09:34:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#about as HTML
+  Rendering bookers/about.html.erb within layouts/application
+  Rendered bookers/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 359ms (Views: 328.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 10.0.2.2 at 2018-02-20 09:34:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 366ms (Views: 363.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-02-20 09:34:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 446ms (Views: 442.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bookers/top" for 10.0.2.2 at 2018-02-20 09:34:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 455ms (Views: 403.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bookers/about" for 10.0.2.2 at 2018-02-20 09:34:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#about as HTML
+  Rendering bookers/about.html.erb within layouts/application
+  Rendered bookers/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 379ms (Views: 342.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 10.0.2.2 at 2018-02-20 09:34:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (35.7ms)
+Completed 200 OK in 363ms (Views: 360.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-02-20 09:34:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 467ms (Views: 464.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 10.0.2.2 at 2018-02-20 09:34:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 453ms (Views: 450.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-02-20 09:34:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 460ms (Views: 455.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 10.0.2.2 at 2018-02-20 09:35:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3TaaK1TavjHAmYdHtYZzLPMIH5rGkJFJkC4KaOkAjIpdveITdNILGayYJih3PP8TvtCSWQpJlxoH9Y0I1ro/Ig==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 454ms (Views: 377.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-02-20 09:35:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 319ms (Views: 314.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2018-02-20 09:35:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ct+SpVzyV0D9GFnf1Ep9KEkwBZ47ssoLssiqfJVaJT2jXQf6rI5C9ByTcJpNouuovE+8eJS8LS4Cjuhmv71Ljg==", "user"=>{"email"=>"1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.6ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-02-20 09:35:24.184128"], ["last_sign_in_at", "2018-02-20 08:04:43.294427"], ["sign_in_count", 12], ["updated_at", "2018-02-20 09:35:24.186663"], ["id", 1]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 320ms (ActiveRecord: 11.5ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2018-02-20 09:35:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_list.html.erb (4.0ms)
+  [1m[36mBooker Load (1.6ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."user_id" = ? ORDER BY "bookers"."id" DESC LIMIT ? OFFSET ?[0m  [["user_id", 1], ["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "bookers" WHERE "bookers"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (132.9ms)
+Completed 200 OK in 474ms (Views: 415.2ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/bookers/33" for 10.0.2.2 at 2018-02-20 09:35:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBooker Load (1.2ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  Rendering bookers/show.html.erb within layouts/application
+  Rendered users/_list.html.erb (3.4ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered bookers/show.html.erb within layouts/application (36.6ms)
+Completed 200 OK in 384ms (Views: 354.4ms | ActiveRecord: 5.0ms)
+
+
+Started DELETE "/bookers/33" for 10.0.2.2 at 2018-02-20 09:35:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fi+nbE4Tv+gi4SmQK1UqvxUH5Rh9w12oSeOYiH4EoCuJaTq7o4Uxhie/Y76wvMlnFepbSHzfkvSEqQmjMLW8+Q==", "id"=>"33"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBooker Load (2.0ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.5ms)[0m  [1m[31mDELETE FROM "bookers" WHERE "bookers"."id" = ?[0m  [["id", 33]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/bookers
+Completed 302 Found in 26ms (ActiveRecord: 12.6ms)
+
+
+Started GET "/bookers" for 10.0.2.2 at 2018-02-20 09:35:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#index as HTML
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering bookers/index.html.erb within layouts/application
+  Rendered users/_list.html.erb (3.9ms)
+  [1m[36mBooker Load (1.8ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" ORDER BY "bookers"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "bookers"[0m
+  Rendered bookers/index.html.erb within layouts/application (180.1ms)
+Completed 200 OK in 513ms (Views: 479.9ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/bookers" for 10.0.2.2 at 2018-02-20 09:35:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#index as HTML
+  [1m[36mUser Load (6.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering bookers/index.html.erb within layouts/application
+  Rendered users/_list.html.erb (2.8ms)
+  [1m[36mBooker Load (1.7ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" ORDER BY "bookers"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "bookers"[0m
+  Rendered bookers/index.html.erb within layouts/application (132.2ms)
+Completed 200 OK in 485ms (Views: 449.8ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/users" for 10.0.2.2 at 2018-02-20 09:35:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#user as HTML
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/user.html.erb within layouts/application
+  Rendered users/_list.html.erb (4.2ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/user.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 337ms (Views: 305.9ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2018-02-20 09:35:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_list.html.erb (3.1ms)
+  [1m[36mBooker Load (1.8ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."user_id" = ? ORDER BY "bookers"."id" DESC LIMIT ? OFFSET ?[0m  [["user_id", 1], ["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "bookers" WHERE "bookers"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (102.9ms)
+Completed 200 OK in 422ms (Views: 386.2ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/bookers/24/edit" for 10.0.2.2 at 2018-02-20 09:35:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#edit as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBooker Load (1.8ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering bookers/edit.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered bookers/edit.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 311ms (Views: 272.6ms | ActiveRecord: 6.0ms)
+
+
+Started PATCH "/bookers/24" for 10.0.2.2 at 2018-02-20 09:35:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QK7vnOc7cmb4WPg4baZky4IK8RYjBWxSkvVao/EFWCjGZMj+a9TooT2lJJ1KiojlO0CVPieCcVKNTtyDBbtngw==", "booker"=>{"title"=>"仲間の分まであげて行こう", "impression"=>"ウェイウェイ〜〜！"}, "commit"=>"編集完了", "id"=>"24"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBooker Load (1.6ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/bookers/24
+Completed 302 Found in 19ms (ActiveRecord: 6.1ms)
+
+
+Started GET "/bookers/24" for 10.0.2.2 at 2018-02-20 09:36:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBooker Load (2.0ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering bookers/show.html.erb within layouts/application
+  Rendered users/_list.html.erb (3.4ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered bookers/show.html.erb within layouts/application (32.1ms)
+Completed 200 OK in 383ms (Views: 352.8ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-22 08:55:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 1665ms (Views: 1611.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-02-22 08:56:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (107.0ms)
+Completed 200 OK in 546ms (Views: 470.4ms | ActiveRecord: 10.5ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2018-02-22 08:56:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6KZu7IgSSORDpZKeOyySFHWTFlhwdifYDCeZAk8yc9H0xH8n6J4Cbqf7XfQajy4AIt7ypZ77sa7Bdv+zqf2XfQ==", "user"=>{"email"=>"1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (5.1ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-02-22 08:56:07.292683"], ["last_sign_in_at", "2018-02-20 09:35:24.184128"], ["sign_in_count", 13], ["updated_at", "2018-02-22 08:56:07.295747"], ["id", 1]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 358ms (ActiveRecord: 10.7ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2018-02-22 08:56:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_list.html.erb (11.3ms)
+  [1m[36mBooker Load (1.8ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."user_id" = ? ORDER BY "bookers"."id" DESC LIMIT ? OFFSET ?[0m  [["user_id", 1], ["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "bookers" WHERE "bookers"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (208.6ms)
+Completed 200 OK in 702ms (Views: 552.2ms | ActiveRecord: 13.2ms)
+
+
+Started POST "/bookers" for 10.0.2.2 at 2018-02-22 08:56:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XIuU+psAd6btrGmqeeajwoRc6WDBA6sxqeu71jJuUdgu+FoUArpFX9EMChthU84wUaQUr8f9HuG6KZce8ZY9bA==", "booker"=>{"title"=>"a", "impression"=>"a"}, "commit"=>"create!"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (7.4ms)[0m  [1m[32mINSERT INTO "bookers" ("title", "impression", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "a"], ["impression", "a"], ["user_id", 1], ["created_at", "2018-02-22 08:56:13.953260"], ["updated_at", "2018-02-22 08:56:13.953260"]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 36ms (ActiveRecord: 16.1ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2018-02-22 08:56:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_list.html.erb (4.0ms)
+  [1m[36mBooker Load (1.7ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."user_id" = ? ORDER BY "bookers"."id" DESC LIMIT ? OFFSET ?[0m  [["user_id", 1], ["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "bookers" WHERE "bookers"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (178.3ms)
+Completed 200 OK in 575ms (Views: 536.0ms | ActiveRecord: 6.8ms)
+
+
+Started DELETE "/bookers/34" for 10.0.2.2 at 2018-02-22 08:56:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"j5OHfxFwyh7KD3SISOYuJawVYLxxYckQSqzTR2YU58X94EmRiMr45/avFzlQU0PXee2dc3effMBZbv+PpeyLcQ==", "id"=>"34"}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBooker Load (1.6ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (5.8ms)[0m  [1m[31mDELETE FROM "bookers" WHERE "bookers"."id" = ?[0m  [["id", 34]]
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/bookers
+Completed 302 Found in 35ms (ActiveRecord: 15.0ms)
+
+
+Started GET "/bookers" for 10.0.2.2 at 2018-02-22 08:56:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#index as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering bookers/index.html.erb within layouts/application
+  Rendered users/_list.html.erb (4.5ms)
+  [1m[36mBooker Load (1.8ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" ORDER BY "bookers"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "bookers"[0m
+  Rendered bookers/index.html.erb within layouts/application (192.0ms)
+Completed 200 OK in 618ms (Views: 574.3ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/bookers" for 10.0.2.2 at 2018-02-22 08:56:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#index as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering bookers/index.html.erb within layouts/application
+  Rendered users/_list.html.erb (3.0ms)
+  [1m[36mBooker Load (1.6ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" ORDER BY "bookers"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "bookers"[0m
+  Rendered bookers/index.html.erb within layouts/application (157.7ms)
+Completed 200 OK in 480ms (Views: 445.8ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/bookers/24" for 10.0.2.2 at 2018-02-22 08:56:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBooker Load (1.3ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering bookers/show.html.erb within layouts/application
+  Rendered users/_list.html.erb (3.0ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered bookers/show.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 384ms (Views: 344.8ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/bookers/25" for 10.0.2.2 at 2018-02-22 08:56:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBooker Load (2.0ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  Rendering bookers/show.html.erb within layouts/application
+  Rendered users/_list.html.erb (2.9ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered bookers/show.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 379ms (Views: 342.0ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/users/sign_out" for 10.0.2.2 at 2018-02-22 09:03:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 401 Unauthorized in 75ms (ActiveRecord: 7.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=sign_out):
+  
+app/controllers/users_controller.rb:10:in `show'
+Started GET "/" for 10.0.2.2 at 2018-02-22 09:03:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 1632ms (Views: 1609.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-22 09:03:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 391ms (Views: 365.3ms | ActiveRecord: 1.8ms)
+
+
+Started DELETE "/users/sign_out" for 10.0.2.2 at 2018-02-22 09:04:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wE5VOCDiNeo4SuQfK4Fx9xQm0A3w729jhfgUvGlQdLmyPZvWuVgHEwTqh64zNBwFwd4twvYR2rOWOjh0qqgYDQ=="}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 43ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-22 09:04:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 388ms (Views: 366.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bookers/top" for 10.0.2.2 at 2018-02-22 09:04:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 339ms (Views: 307.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bookers/about" for 10.0.2.2 at 2018-02-22 09:04:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#about as HTML
+  Rendering bookers/about.html.erb within layouts/application
+  Rendered bookers/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 339ms (Views: 314.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-22 09:13:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 1753ms (Views: 1702.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-02-22 09:13:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (98.7ms)
+Completed 200 OK in 506ms (Views: 436.8ms | ActiveRecord: 8.9ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2018-02-22 09:13:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SuRCcQ1qs/vpdhPba+jaRBqY1QMR7U88NtqBYZBjupsRsoUgkdV7m1FAEYxtyXb3O4yjwPW7YbJ3qda71CiuDQ==", "user"=>{"email"=>"1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.2ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-02-22 09:13:58.660186"], ["last_sign_in_at", "2018-02-22 08:56:07.292683"], ["sign_in_count", 14], ["updated_at", "2018-02-22 09:13:58.664129"], ["id", 1]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 345ms (ActiveRecord: 9.8ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2018-02-22 09:13:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_list.html.erb (10.7ms)
+  [1m[36mBooker Load (2.5ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."user_id" = ? ORDER BY "bookers"."id" DESC LIMIT ? OFFSET ?[0m  [["user_id", 1], ["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "bookers" WHERE "bookers"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (198.7ms)
+Completed 200 OK in 663ms (Views: 520.1ms | ActiveRecord: 15.3ms)
+
+
+Started POST "/bookers" for 10.0.2.2 at 2018-02-22 09:14:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dptVANHFX+73Ja3VypOgjBaMdIHc9SHnN0dJgCiNU2oyv92R0Ojmdfcu8rXzqvLgMArrhSNk1YOZNTuZLgh7TQ==", "booker"=>{"title"=>"a", "impression"=>"a"}, "commit"=>"create!"}
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (6.5ms)[0m  [1m[32mINSERT INTO "bookers" ("title", "impression", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "a"], ["impression", "a"], ["user_id", 1], ["created_at", "2018-02-22 09:14:16.274663"], ["updated_at", "2018-02-22 09:14:16.274663"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 48ms (ActiveRecord: 16.1ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2018-02-22 09:14:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_list.html.erb (3.9ms)
+  [1m[36mBooker Load (1.6ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."user_id" = ? ORDER BY "bookers"."id" DESC LIMIT ? OFFSET ?[0m  [["user_id", 1], ["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "bookers" WHERE "bookers"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (152.8ms)
+Completed 200 OK in 567ms (Views: 532.9ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/bookers/35" for 10.0.2.2 at 2018-02-22 09:14:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBooker Load (2.3ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  Rendering bookers/show.html.erb within layouts/application
+  Rendered users/_list.html.erb (5.4ms)
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered bookers/show.html.erb within layouts/application (40.3ms)
+Completed 200 OK in 407ms (Views: 371.2ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/bookers/35/edit" for 10.0.2.2 at 2018-02-22 09:14:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBooker Load (2.2ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  Rendering bookers/edit.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered bookers/edit.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 358ms (Views: 305.6ms | ActiveRecord: 7.6ms)
+
+
+Started PATCH "/bookers/35" for 10.0.2.2 at 2018-02-22 09:14:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+DqC7cjrK6cbZcWi4zXLQUsarwQLGl36FQ3OlctdUd3kdH+Wm5MUXU+GG+RWzauR1/GYetHFO6EmNyqHH7TYhQ==", "booker"=>{"title"=>"a", "impression"=>"auuuuu"}, "commit"=>"編集完了", "id"=>"35"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBooker Load (1.6ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (4.4ms)[0m  [1m[33mUPDATE "bookers" SET "impression" = ?, "updated_at" = ? WHERE "bookers"."id" = ?[0m  [["impression", "auuuuu"], ["updated_at", "2018-02-22 09:14:36.290937"], ["id", 35]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/bookers/35
+Completed 302 Found in 33ms (ActiveRecord: 12.2ms)
+
+
+Started GET "/bookers/35" for 10.0.2.2 at 2018-02-22 09:14:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBooker Load (1.5ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  Rendering bookers/show.html.erb within layouts/application
+  Rendered users/_list.html.erb (3.4ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered bookers/show.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 362ms (Views: 330.9ms | ActiveRecord: 5.2ms)
+
+
+Started DELETE "/bookers/35" for 10.0.2.2 at 2018-02-22 09:14:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"hUT7qalhmc05HY0rLqyjA4SFnPZJu1jANn+tnRcYHaHBYHM4qEwgVjkW0ksXlfFvogMD8rYqrKSYDd+EEZ01hg==", "id"=>"35"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBooker Load (1.6ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.5ms)[0m  [1m[31mDELETE FROM "bookers" WHERE "bookers"."id" = ?[0m  [["id", 35]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/bookers
+Completed 302 Found in 24ms (ActiveRecord: 11.2ms)
+
+
+Started GET "/bookers" for 10.0.2.2 at 2018-02-22 09:14:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#index as HTML
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering bookers/index.html.erb within layouts/application
+  Rendered users/_list.html.erb (2.8ms)
+  [1m[36mBooker Load (1.7ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" ORDER BY "bookers"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "bookers"[0m
+  Rendered bookers/index.html.erb within layouts/application (161.7ms)
+Completed 200 OK in 495ms (Views: 457.9ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/bookers/25" for 10.0.2.2 at 2018-02-22 09:14:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBooker Load (2.6ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  Rendering bookers/show.html.erb within layouts/application
+  Rendered users/_list.html.erb (2.8ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered bookers/show.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 349ms (Views: 304.3ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/bookers/24" for 10.0.2.2 at 2018-02-22 09:14:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBooker Load (2.1ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering bookers/show.html.erb within layouts/application
+  Rendered users/_list.html.erb (3.0ms)
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered bookers/show.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 380ms (Views: 336.3ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/users" for 10.0.2.2 at 2018-02-22 09:15:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#user as HTML
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/user.html.erb within layouts/application
+  Rendered users/_list.html.erb (3.6ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/user.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 384ms (Views: 348.8ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2018-02-22 09:15:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_list.html.erb (3.9ms)
+  [1m[36mBooker Load (1.9ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."user_id" = ? ORDER BY "bookers"."id" DESC LIMIT ? OFFSET ?[0m  [["user_id", 1], ["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "bookers" WHERE "bookers"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (127.5ms)
+Completed 200 OK in 443ms (Views: 404.6ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/users/1/edit" for 10.0.2.2 at 2018-02-22 09:15:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 323ms (Views: 286.3ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/attachments/7a8c5d3766a43923213b0619fdaa3f1395b8fc0e/store/fill/60/60/2c17f0699a35a13079ea5421d0d993694310774979bc6711bc8d9c56f89e/profile_image" for 10.0.2.2 at 2018-02-22 09:15:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2018-02-22 09:15:28 +0000] GET "/7a8c5d3766a43923213b0619fdaa3f1395b8fc0e/store/fill/60/60/2c17f0699a35a13079ea5421d0d993694310774979bc6711bc8d9c56f89e/profile_image" 200 127.6ms
+
+Started PATCH "/users/1" for 10.0.2.2 at 2018-02-22 09:15:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KXKEAKkZYngXGc/1p+O7qNuk1s+pXl2hosnlOUNH+M+G4dELX/uQacZ7+LeaoNDihy+uUF7YA5w6d+JkCueLYA==", "user"=>{"name"=>"", "profile_image"=>"{}", "profile_text"=>"酔っ払いのライマー"}, "commit"=>"変更を保存", "id"=>"1"}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 16ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2018-02-22 09:15:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_list.html.erb (3.7ms)
+  [1m[36mBooker Load (1.7ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."user_id" = ? ORDER BY "bookers"."id" DESC LIMIT ? OFFSET ?[0m  [["user_id", 1], ["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "bookers" WHERE "bookers"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (144.1ms)
+Completed 200 OK in 473ms (Views: 436.4ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/users/1/edit" for 10.0.2.2 at 2018-02-22 09:15:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 316ms (Views: 274.2ms | ActiveRecord: 4.0ms)
+
+
+Started PATCH "/users/1" for 10.0.2.2 at 2018-02-22 09:15:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RqbW59+/vSUaBHgYs6MwOl6Md9kIQnTUbaYFQsbs97/pNYPsKV1PNMtmT1qO4FtwAgcPRv/EKun1GAIfj0yEEA==", "user"=>{"name"=>"Mum", "profile_image"=>"{}", "profile_text"=>"酔っ払いのライマー"}, "commit"=>"変更を保存", "id"=>"1"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.7ms)[0m  [1m[33mUPDATE "users" SET "name" = ?, "profile_image_id" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["name", "Mum"], ["profile_image_id", "2c17f0699a35a13079ea5421d0d993694310774979bc6711bc8d9c56f89e"], ["updated_at", "2018-02-22 09:15:45.391620"], ["id", 1]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 26ms (ActiveRecord: 11.4ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2018-02-22 09:15:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_list.html.erb (3.5ms)
+  [1m[36mBooker Load (1.8ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."user_id" = ? ORDER BY "bookers"."id" DESC LIMIT ? OFFSET ?[0m  [["user_id", 1], ["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "bookers" WHERE "bookers"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (154.0ms)
+Completed 200 OK in 473ms (Views: 443.0ms | ActiveRecord: 6.8ms)
+
+
+Started DELETE "/users/sign_out" for 10.0.2.2 at 2018-02-22 09:15:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YxyGqXb5DmAxDsMFo/9eTzBIkK0wz8BQCpNb3hEUySAnOA44d9S3+zEFnGWaxgwjFs4Pqc9eNDSk4SnHF5HhBw=="}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 33ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-22 09:15:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 335ms (Views: 308.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-22 09:16:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 326ms (Views: 297.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-22 13:30:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 2102ms (Views: 2028.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-22 13:35:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 455ms (Views: 428.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-22 13:39:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3971ms (Views: 3941.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/images.jpeg" for 10.0.2.2 at 2018-02-22 13:39:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/img/images.jpeg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 10.0.2.2 at 2018-02-22 13:39:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 509ms (Views: 480.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images.jpeg" for 10.0.2.2 at 2018-02-22 13:39:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/images.jpeg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 10.0.2.2 at 2018-02-22 13:41:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 448ms (Views: 427.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/images.jpeg" for 10.0.2.2 at 2018-02-22 13:41:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/img/images.jpeg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 10.0.2.2 at 2018-02-22 13:41:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 5555ms (Views: 5490.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/images.jpeg" for 10.0.2.2 at 2018-02-22 13:41:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/img/images.jpeg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 10.0.2.2 at 2018-02-22 13:43:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 496ms (Views: 470.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images.jpeg" for 10.0.2.2 at 2018-02-22 13:43:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/images.jpeg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 10.0.2.2 at 2018-02-22 13:43:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 452ms (Views: 427.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/no_image.jpg" for 10.0.2.2 at 2018-02-22 13:43:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/img/no_image.jpg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 10.0.2.2 at 2018-02-22 13:46:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 4871ms (Views: 4848.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/no_image.jpg" for 10.0.2.2 at 2018-02-22 13:46:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/img/no_image.jpg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 10.0.2.2 at 2018-02-22 13:47:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 9678ms (Views: 9615.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/no_image.jpg" for 10.0.2.2 at 2018-02-22 13:47:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/img/no_image.jpg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 10.0.2.2 at 2018-02-22 13:48:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5018ms (Views: 4992.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/images.jpeg" for 10.0.2.2 at 2018-02-22 13:49:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/img/images.jpeg"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 10.0.2.2 at 2018-02-22 13:51:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 427ms (Views: 407.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-22 13:53:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (2.0ms)
+Completed 401 Unauthorized in 101ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/vagrant/Bookers2/app/views/bookers/top.html.erb:9: syntax error, unexpected ',', expecting ')'
+...end=( image_tag("images.jpeg"), style: "text-align:center" )...
+...                               ^):
+  
+app/views/bookers/top.html.erb:9: syntax error, unexpected ',', expecting ')'
+Started GET "/" for 10.0.2.2 at 2018-02-22 13:54:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 453ms (Views: 430.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-22 13:55:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 4621ms (Views: 4595.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2018-02-22 13:55:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-02-22 13:55:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (90.0ms)
+Completed 200 OK in 650ms (Views: 579.8ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-22 13:59:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (1.9ms)
+Completed 401 Unauthorized in 107ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/vagrant/Bookers2/app/views/bookers/top.html.erb:10: syntax error, unexpected ',', expecting ')'
+...end=( image_tag("images.jpeg"), :size => '250x250' );@output...
+...                               ^):
+  
+app/views/bookers/top.html.erb:10: syntax error, unexpected ',', expecting ')'
+Started GET "/" for 10.0.2.2 at 2018-02-22 13:59:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (27.8ms)
+Completed 200 OK in 517ms (Views: 491.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-22 14:33:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (5018.0ms)
+Completed 200 OK in 5883ms (Views: 5821.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-22 14:35:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 502ms (Views: 467.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-22 14:36:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 458ms (Views: 430.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-22 14:38:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 442ms (Views: 416.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-22 14:40:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 4497ms (Views: 4471.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-22 14:45:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 553ms (Views: 527.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-22 14:49:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (671.7ms)
+Completed 200 OK in 1256ms (Views: 1229.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-22 14:50:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 545ms (Views: 520.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-22 14:51:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 4855ms (Views: 4829.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-22 14:51:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 6104ms (Views: 6079.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-22 14:51:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 469ms (Views: 436.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-22 14:55:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 6044ms (Views: 6018.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-22 14:56:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 5526ms (Views: 5502.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-22 14:58:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3844ms (Views: 3814.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-22 14:59:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 373ms (Views: 353.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-24 11:58:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 1868ms (Views: 1814.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 10.0.2.2 at 2018-02-24 11:59:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (112.4ms)
+Completed 200 OK in 530ms (Views: 468.5ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-02-24 11:59:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (39.3ms)
+Completed 200 OK in 396ms (Views: 392.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-02-24 11:59:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (36.3ms)
+Completed 200 OK in 425ms (Views: 420.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-02-24 12:00:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (591.7ms)
+Completed 401 Unauthorized in 672ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name_field' for #<ActionView::Helpers::FormBuilder:0xb659bbd4>):
+     8:       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+     9:       <div class="field">
+    10:         <%= f.label :name %><br />
+    11:         <%= f.name_field :name, autofocus: true, autocomplete: "name" %>
+    12:       </div>
+    13: 
+    14:       <div class="field">
+  
+app/views/devise/sessions/new.html.erb:11:in `block in _app_views_devise_sessions_new_html_erb__657924770__617873968'
+app/views/devise/sessions/new.html.erb:8:in `_app_views_devise_sessions_new_html_erb__657924770__617873968'
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-02-24 12:00:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (515.5ms)
+Completed 401 Unauthorized in 609ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name_field' for #<ActionView::Helpers::FormBuilder:0x0c2c17d8>):
+     8:       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+     9:       <div class="field">
+    10:         <%= f.label :user_name %><br />
+    11:         <%= f.name_field :name, autofocus: true, autocomplete: "name" %>
+    12:       </div>
+    13: 
+    14:       <div class="field">
+  
+app/views/devise/sessions/new.html.erb:11:in `block in _app_views_devise_sessions_new_html_erb__657924770_101947540'
+app/views/devise/sessions/new.html.erb:8:in `_app_views_devise_sessions_new_html_erb__657924770_101947540'
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-02-24 12:00:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (571.9ms)
+Completed 401 Unauthorized in 664ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name_field' for #<ActionView::Helpers::FormBuilder:0xb3d455b8>):
+     8:       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+     9:       <div class="field">
+    10:         <%= f.label :name %><br />
+    11:         <%= f.name_field :name, autofocus: true, autocomplete: "name" %>
+    12:       </div>
+    13: 
+    14:       <div class="field">
+  
+app/views/devise/sessions/new.html.erb:11:in `block in _app_views_devise_sessions_new_html_erb__657924770__626584928'
+app/views/devise/sessions/new.html.erb:8:in `_app_views_devise_sessions_new_html_erb__657924770__626584928'
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-02-24 12:05:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (460.4ms)
+Completed 401 Unauthorized in 533ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name_field' for #<ActionView::Helpers::FormBuilder:0x0d0954f4>):
+     8:       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+     9:       <div class="field">
+    10:         <%= f.label :name %><br />
+    11:         <%= f.name_field :name, autofocus: true, autocomplete: "name" %>
+    12:       </div>
+    13: 
+    14:       <div class="field">
+  
+app/views/devise/sessions/new.html.erb:11:in `block in _app_views_devise_sessions_new_html_erb__657924770_109349790'
+app/views/devise/sessions/new.html.erb:8:in `_app_views_devise_sessions_new_html_erb__657924770_109349790'
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-02-24 12:06:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (40.3ms)
+Completed 200 OK in 432ms (Views: 430.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-02-24 12:07:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (32.3ms)
+Completed 200 OK in 424ms (Views: 422.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2018-02-24 12:07:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1T4dqUD1RTX11rhvr0p7xmGuI0dtgHRklNyf7ep/BLP2L+beUbt3E2owq7pT2UepoXKWOSMsvBvJwiq2xH26xg==", "user"=>{"name"=>"Mummy-D", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1T4dqUD1RTX11rhvr0p7xmGuI0dtgHRklNyf7ep/BLP2L+beUbt3E2owq7pT2UepoXKWOSMsvBvJwiq2xH26xg==", "user"=>{"name"=>"Mummy-D", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Unpermitted parameter: :name
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (32.4ms)
+Completed 200 OK in 669ms (Views: 398.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2018-02-24 12:07:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VuXWJUJDYqmqb0TGCGW/9FzK+LX6Fw7shQewrOtc0ax19C1SUw1QjzWJVxP09oObnBZNy7S7xpPYGQX3xV5v2Q==", "user"=>{"name"=>"DJ-JIN", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VuXWJUJDYqmqb0TGCGW/9FzK+LX6Fw7shQewrOtc0ax19C1SUw1QjzWJVxP09oObnBZNy7S7xpPYGQX3xV5v2Q==", "user"=>{"name"=>"DJ-JIN", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Unpermitted parameter: :name
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (28.8ms)
+Completed 200 OK in 608ms (Views: 405.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 10.0.2.2 at 2018-02-24 12:07:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (40.9ms)
+Completed 200 OK in 448ms (Views: 445.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 10.0.2.2 at 2018-02-24 12:07:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iu7ePM/Md85ZGil++2MvL8kmlVr+9beJx0rexP90RubJnj/x7GIW4ms6mI2mqTOIRZIuJuB9u43iF1SKrey4Nw==", "user"=>{"name"=>"K", "email"=>"1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (2.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 675ms (Views: 376.0ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/users" for 10.0.2.2 at 2018-02-24 12:07:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nAHWiOxvEcrUaco3J97wbZaD+f0l8IHBVeNbs+18Lza/EC3//SEj7EuP2eLbTcwCVl9Mg2tcSb4I/e7ow36RQw==", "user"=>{"name"=>"KK", "email"=>"k@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (1.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "k@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (10.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["email", "k@gmail.com"], ["encrypted_password", "$2a$11$g/Kt//yK6Lb8FoAKjv6V0O.Axp8bWj5p49srfGOfi.yTaUIsVfY/O"], ["name", "KK"], ["created_at", "2018-02-24 12:07:50.645413"], ["updated_at", "2018-02-24 12:07:50.645413"]]
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.4ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2018-02-24 12:07:50.664805"], ["last_sign_in_at", "2018-02-24 12:07:50.664805"], ["current_sign_in_ip", "10.0.2.2"], ["last_sign_in_ip", "10.0.2.2"], ["updated_at", "2018-02-24 12:07:50.666621"], ["id", 4]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 306ms (ActiveRecord: 24.2ms)
+
+
+Started GET "/users/4" for 10.0.2.2 at 2018-02-24 12:07:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_list.html.erb (23.2ms)
+  [1m[36mBooker Load (3.1ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."user_id" = ? ORDER BY "bookers"."id" DESC LIMIT ? OFFSET ?[0m  [["user_id", 4], ["LIMIT", 10], ["OFFSET", 0]]
+  Rendered users/show.html.erb within layouts/application (77.7ms)
+Completed 200 OK in 577ms (Views: 407.7ms | ActiveRecord: 13.7ms)
+
+
+Started DELETE "/users/sign_out" for 10.0.2.2 at 2018-02-24 12:07:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qQy4TlX+LeV73rj69D/jeSdfGVq/Ka5L5TuJPwrQuQKKHUM5RLAfw+Q4qy8IrN8W54OsJPGFZjS4JTxkJNIHdw=="}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 27ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-24 12:07:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 349ms (Views: 328.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-02-24 12:07:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 431ms (Views: 427.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2018-02-24 12:08:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"39K+FwyCjXHV4lKkshWJZB2qWUVro7+ZsdrZAxqTsQvyxrmP9FweTLPsV5nDqTjEprzzBJP/BDcMKIzNBG7d/A==", "user"=>{"name"=>"KK", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"39K+FwyCjXHV4lKkshWJZB2qWUVro7+ZsdrZAxqTsQvyxrmP9FweTLPsV5nDqTjEprzzBJP/BDcMKIzNBG7d/A==", "user"=>{"name"=>"KK", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Unpermitted parameter: :name
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 565ms (Views: 353.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-02-24 12:13:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 418ms (Views: 417.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2018-02-24 12:13:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3f2O142UQhm6yqRCVzEbgwKh3rWUXqTlArR0hPHYZEg4etO6G3pcxhIv3lE2vxNtCUGvd7WaVfxjGS/ew7gPqg==", "user"=>{"name"=>"KK", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3f2O142UQhm6yqRCVzEbgwKh3rWUXqTlArR0hPHYZEg4etO6G3pcxhIv3lE2vxNtCUGvd7WaVfxjGS/ew7gPqg==", "user"=>{"name"=>"KK", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Unpermitted parameter: :name
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 569ms (Views: 365.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-02-24 12:15:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (95.6ms)
+Completed 200 OK in 1958ms (Views: 1906.0ms | ActiveRecord: 6.1ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2018-02-24 12:15:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cTszKa6xPlJlK88TJKTtbjW+/eBcaqaFJkoRYPR6Gu+UvG5EOF8gjc3OtQBFKuWAPl6MIn2uV5xH50o6xhpxDQ==", "user"=>{"name"=>"KK", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["name", "KK"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.7ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-02-24 12:15:10.122557"], ["sign_in_count", 2], ["updated_at", "2018-02-24 12:15:10.126128"], ["id", 4]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 351ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/users/4" for 10.0.2.2 at 2018-02-24 12:15:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_list.html.erb (22.1ms)
+  [1m[36mBooker Load (2.1ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."user_id" = ? ORDER BY "bookers"."id" DESC LIMIT ? OFFSET ?[0m  [["user_id", 4], ["LIMIT", 10], ["OFFSET", 0]]
+  Rendered users/show.html.erb within layouts/application (72.0ms)
+Completed 200 OK in 560ms (Views: 417.9ms | ActiveRecord: 13.0ms)
+
+
+Started POST "/bookers" for 10.0.2.2 at 2018-02-24 12:15:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VqaLPHGgEJzSgrcLCLJ2NmvxTCcdYj/zaj8XCxV+d+/a6IYmziP+HM6Vi81fxJ0rH7Wn9qOZdbpM7tuep9IZ/g==", "booker"=>{"title"=>"aa", "impression"=>"222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222"}, "commit"=>"create!"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering bookers/index.html.erb within layouts/application
+  Rendered users/_list.html.erb (13.2ms)
+  [1m[36mBooker Load (1.7ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" ORDER BY "bookers"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "bookers"[0m
+  Rendered bookers/index.html.erb within layouts/application (238.7ms)
+Completed 200 OK in 662ms (Views: 611.2ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/attachments/510b58925d8e0adbd799302f0b6b6d7252a0f7e5/store/fill/45/45/005d9df0facc29175c3c9d6d8c5fb52448fa52b66fa15ff2b1b2d9b14fec/profile_image" for 10.0.2.2 at 2018-02-24 12:15:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/3233ad099906a31dcfd8799ac73fa9aded5d195b/store/fill/45/45/2c17f0699a35a13079ea5421d0d993694310774979bc6711bc8d9c56f89e/profile_image" for 10.0.2.2 at 2018-02-24 12:15:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2018-02-24 12:15:34 +0000] GET "/510b58925d8e0adbd799302f0b6b6d7252a0f7e5/store/fill/45/45/005d9df0facc29175c3c9d6d8c5fb52448fa52b66fa15ff2b1b2d9b14fec/profile_image" 200 188.9ms
+
+Refile::App: [2018-02-24 12:15:34 +0000] GET "/3233ad099906a31dcfd8799ac73fa9aded5d195b/store/fill/45/45/2c17f0699a35a13079ea5421d0d993694310774979bc6711bc8d9c56f89e/profile_image" 200 115.5ms
+
+Started GET "/bookers/25" for 10.0.2.2 at 2018-02-24 12:15:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mBooker Load (1.7ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  Rendering bookers/show.html.erb within layouts/application
+  Rendered users/_list.html.erb (11.6ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered bookers/show.html.erb within layouts/application (37.6ms)
+Completed 200 OK in 436ms (Views: 389.5ms | ActiveRecord: 5.3ms)
+
+
+Started POST "/bookers" for 10.0.2.2 at 2018-02-24 12:15:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Upx+oWblZGyGWd7cPDus5GJSiKCOw0jx67g8WwS4+laULkRXGD1Bw+X+5SeAX4W/q+cQ1YjX/5/mzERvVfDsjA==", "booker"=>{"title"=>"d", "impression"=>"222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222"}, "commit"=>"create!"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering bookers/index.html.erb within layouts/application
+  Rendered users/_list.html.erb (14.4ms)
+  [1m[36mBooker Load (1.6ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" ORDER BY "bookers"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "bookers"[0m
+  Rendered bookers/index.html.erb within layouts/application (244.6ms)
+Completed 200 OK in 603ms (Views: 579.0ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2018-02-24 12:16:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_list.html.erb (12.0ms)
+  [1m[36mBooker Load (1.8ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."user_id" = ? ORDER BY "bookers"."id" DESC LIMIT ? OFFSET ?[0m  [["user_id", 1], ["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "bookers" WHERE "bookers"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (142.1ms)
+Completed 200 OK in 495ms (Views: 454.5ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/bookers/24" for 10.0.2.2 at 2018-02-24 12:16:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mBooker Load (2.7ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering bookers/show.html.erb within layouts/application
+  Rendered users/_list.html.erb (11.3ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered bookers/show.html.erb within layouts/application (35.2ms)
+Completed 200 OK in 428ms (Views: 379.6ms | ActiveRecord: 8.3ms)
+
+
+Started DELETE "/users/sign_out" for 10.0.2.2 at 2018-02-24 12:16:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pGyyZ0q4KSvODWBju3jore+IAevwvzCITGyjrGEaoxkoIr999TvHq9IaXKXsDgOwm8zqOk5EesFqvW8507bNCA=="}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 29ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-24 12:16:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 365ms (Views: 346.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-02-24 12:16:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (24.6ms)
+Completed 200 OK in 367ms (Views: 364.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2018-02-24 12:16:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JkXB1w6qMeuL/k/HVCFJ23BCQ1FPvZh8LvbyFwjYUAhJQ5UiWxr5h8/wxc3D4iOZLNesivCPVpwnbImbaC4uLA==", "user"=>{"name"=>"Mum", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["name", "Mum"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.9ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-02-24 12:16:46.592455"], ["last_sign_in_at", "2018-02-22 09:13:58.660186"], ["sign_in_count", 15], ["updated_at", "2018-02-24 12:16:46.595002"], ["id", 1]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 283ms (ActiveRecord: 10.4ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2018-02-24 12:16:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_list.html.erb (3.9ms)
+  [1m[36mBooker Load (2.2ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."user_id" = ? ORDER BY "bookers"."id" DESC LIMIT ? OFFSET ?[0m  [["user_id", 1], ["LIMIT", 10], ["OFFSET", 0]]
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "bookers" WHERE "bookers"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (135.9ms)
+Completed 200 OK in 482ms (Views: 450.4ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/attachments/80167190fc0f262be3338ec23d3144d82a617a86/store/fill/100/100/2c17f0699a35a13079ea5421d0d993694310774979bc6711bc8d9c56f89e/profile_image" for 10.0.2.2 at 2018-02-24 12:16:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2018-02-24 12:16:47 +0000] GET "/80167190fc0f262be3338ec23d3144d82a617a86/store/fill/100/100/2c17f0699a35a13079ea5421d0d993694310774979bc6711bc8d9c56f89e/profile_image" 200 46.4ms
+
+Started GET "/bookers/24" for 10.0.2.2 at 2018-02-24 12:16:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBooker Load (1.9ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering bookers/show.html.erb within layouts/application
+  Rendered users/_list.html.erb (4.0ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered bookers/show.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 369ms (Views: 331.8ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/bookers" for 10.0.2.2 at 2018-02-24 12:17:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#index as HTML
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering bookers/index.html.erb within layouts/application
+  Rendered users/_list.html.erb (3.2ms)
+  [1m[36mBooker Load (1.4ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" ORDER BY "bookers"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "bookers"[0m
+  Rendered bookers/index.html.erb within layouts/application (230.6ms)
+Completed 200 OK in 577ms (Views: 531.2ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/bookers/25" for 10.0.2.2 at 2018-02-24 12:17:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBooker Load (1.6ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  Rendering bookers/show.html.erb within layouts/application
+  Rendered users/_list.html.erb (3.1ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered bookers/show.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 391ms (Views: 351.6ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/bookers/25" for 10.0.2.2 at 2018-02-24 12:17:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBooker Load (3.8ms)[0m  [1m[34mSELECT  "bookers".* FROM "bookers" WHERE "bookers"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  Rendering bookers/show.html.erb within layouts/application
+  Rendered users/_list.html.erb (3.0ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered bookers/show.html.erb within layouts/application (26.6ms)
+Completed 200 OK in 394ms (Views: 341.0ms | ActiveRecord: 11.0ms)
+
+
+Started DELETE "/users/sign_out" for 10.0.2.2 at 2018-02-24 12:17:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sIdyjNtvM+eGjiaCsErBR6v3QKmVZZSkGDdKCbCy1hXN/DqqNn1xvgWPOkic06swnFl0WaN3XIRJVjD3H7yVBA=="}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-02-24 12:17:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BookersController#top as HTML
+  Rendering bookers/top.html.erb within layouts/application
+  Rendered bookers/top.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 314ms (Views: 290.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-02-24 12:17:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 344ms (Views: 342.0ms | ActiveRecord: 0.0ms)
+
+
