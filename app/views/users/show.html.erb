@@ -12,8 +12,31 @@
 	<!-- ページの中身 -->
 	<div class="container">
 		<div class="row">
-			<!-- ユーザー情報（共通テンプレート） -->
-			<%= render 'users/list', newpost: @newpost %>
+			<!-- ユーザー情報（共通テンプレート）  -->
+			<div class="col-xs-3">
+				<section class="">
+					<h3> <%= @user.name %>'s Profile </h3>
+					<img><%= attachment_image_tag @user, :profile_image, :fill, 100, 100, class: "img-circle pull-left profile-thumb" ,fallback: "no_image.jpg"%></img> <br/>
+					<table class="table table-stripped">
+						<tr><th> name </th>
+							<th><%= @user.name %></th>
+						</tr>
+						<tr><th> introduction </th>
+							<th><%= @user.profile_text %></th>
+						</tr>
+					</table>
+				</section>
+				<section class="new-book">
+					<p class="headline-create-new-post"> create new post </p>
+					<%= form_for(@newpost) do |f| %>
+					<h4> title </h4>
+					<%= f.text_field :title, class: "input-xlarge" %>
+					<h4> impression </h4>
+					<%= f.text_area :impression, :size=> "26x5" %><br />
+					<%= f.submit 'create!', class: 'btn btn-primary col-xs-12'%>
+					<% end %>
+				</section>
+			</div>
 			<!-- 投稿内容一覧 -->
 			<div class="col-xs-9">
 				<section class="contents">
